@@ -1,6 +1,6 @@
 {
   "name": "@yilangaodesign/design-system",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Centralized design system for yilangaodesign projects — tokens, mixins, and shared React components.",
   "license": "MIT",
   "repository": {
