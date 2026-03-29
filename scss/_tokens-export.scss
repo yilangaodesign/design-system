@@ -1,0 +1,176 @@
+@use 'tokens/colors' as *;
+@use 'tokens/spacing' as *;
+@use 'tokens/typography' as *;
+@use 'tokens/elevation' as *;
+@use 'tokens/motion' as *;
+@use 'tokens/breakpoints' as *;
+
+:root {
+  // ── Brand Accent ──────────────────────────────────────────────────────────
+  --ds-accent-10: #{$portfolio-accent-10};
+  --ds-accent-20: #{$portfolio-accent-20};
+  --ds-accent-30: #{$portfolio-accent-30};
+  --ds-accent-40: #{$portfolio-accent-40};
+  --ds-accent-50: #{$portfolio-accent-50};
+  --ds-accent-60: #{$portfolio-accent-60};
+  --ds-accent-70: #{$portfolio-accent-70};
+  --ds-accent-80: #{$portfolio-accent-80};
+  --ds-accent-90: #{$portfolio-accent-90};
+  --ds-accent-100: #{$portfolio-accent-100};
+
+  // ── Neutral ───────────────────────────────────────────────────────────────
+  --ds-neutral-00: #{$portfolio-neutral-00};
+  --ds-neutral-05: #{$portfolio-neutral-05};
+  --ds-neutral-10: #{$portfolio-neutral-10};
+  --ds-neutral-20: #{$portfolio-neutral-20};
+  --ds-neutral-30: #{$portfolio-neutral-30};
+  --ds-neutral-40: #{$portfolio-neutral-40};
+  --ds-neutral-50: #{$portfolio-neutral-50};
+  --ds-neutral-60: #{$portfolio-neutral-60};
+  --ds-neutral-70: #{$portfolio-neutral-70};
+  --ds-neutral-80: #{$portfolio-neutral-80};
+  --ds-neutral-90: #{$portfolio-neutral-90};
+  --ds-neutral-100: #{$portfolio-neutral-100};
+
+  // ── Semantic: Surfaces ────────────────────────────────────────────────────
+  --ds-surface-primary: #{$portfolio-surface-primary};
+  --ds-surface-secondary: #{$portfolio-surface-secondary};
+  --ds-surface-tertiary: #{$portfolio-surface-tertiary};
+  --ds-surface-inverse: #{$portfolio-surface-inverse};
+  --ds-surface-overlay: #{$portfolio-surface-overlay};
+
+  // ── Semantic: Text ────────────────────────────────────────────────────────
+  --ds-text-primary: #{$portfolio-text-primary};
+  --ds-text-secondary: #{$portfolio-text-secondary};
+  --ds-text-helper: #{$portfolio-text-helper};
+  --ds-text-placeholder: #{$portfolio-text-placeholder};
+  --ds-text-disabled: #{$portfolio-text-disabled};
+  --ds-text-inverse: #{$portfolio-text-inverse};
+  --ds-text-on-color: #{$portfolio-text-on-color};
+  --ds-text-link: #{$portfolio-text-link};
+  --ds-text-error: #{$portfolio-text-error};
+
+  // ── Semantic: Borders ─────────────────────────────────────────────────────
+  --ds-border-subtle: #{$portfolio-border-subtle};
+  --ds-border-strong: #{$portfolio-border-strong};
+  --ds-border-interactive: #{$portfolio-border-interactive};
+  --ds-border-inverse: #{$portfolio-border-inverse};
+  --ds-border-disabled: #{$portfolio-border-disabled};
+
+  // ── Semantic: Support ─────────────────────────────────────────────────────
+  --ds-support-error: #{$portfolio-support-error};
+  --ds-support-success: #{$portfolio-support-success};
+  --ds-support-warning: #{$portfolio-support-warning};
+  --ds-support-info: #{$portfolio-support-info};
+
+  // ── Focus / Highlight ─────────────────────────────────────────────────────
+  --ds-focus: #{$portfolio-focus};
+  --ds-focus-inset: #{$portfolio-focus-inset};
+  --ds-highlight: #{$portfolio-highlight};
+
+  // ── Spacing ───────────────────────────────────────────────────────────────
+  --ds-spacing-01: #{$portfolio-spacing-01};
+  --ds-spacing-02: #{$portfolio-spacing-02};
+  --ds-spacing-03: #{$portfolio-spacing-03};
+  --ds-spacing-04: #{$portfolio-spacing-04};
+  --ds-spacing-05: #{$portfolio-spacing-05};
+  --ds-spacing-06: #{$portfolio-spacing-06};
+  --ds-spacing-07: #{$portfolio-spacing-07};
+  --ds-spacing-08: #{$portfolio-spacing-08};
+  --ds-spacing-09: #{$portfolio-spacing-09};
+  --ds-spacing-10: #{$portfolio-spacing-10};
+  --ds-spacing-11: #{$portfolio-spacing-11};
+  --ds-spacing-12: #{$portfolio-spacing-12};
+  --ds-spacing-13: #{$portfolio-spacing-13};
+
+  // ── Layout ────────────────────────────────────────────────────────────────
+  --ds-layout-01: #{$portfolio-layout-01};
+  --ds-layout-02: #{$portfolio-layout-02};
+  --ds-layout-03: #{$portfolio-layout-03};
+  --ds-layout-04: #{$portfolio-layout-04};
+  --ds-layout-05: #{$portfolio-layout-05};
+  --ds-layout-06: #{$portfolio-layout-06};
+  --ds-layout-07: #{$portfolio-layout-07};
+
+  // ── Containers ────────────────────────────────────────────────────────────
+  --ds-container-sm: #{$portfolio-container-sm};
+  --ds-container-md: #{$portfolio-container-md};
+  --ds-container-lg: #{$portfolio-container-lg};
+  --ds-container-xl: #{$portfolio-container-xl};
+
+  // ── Typography ────────────────────────────────────────────────────────────
+  --ds-font-sans: #{$portfolio-font-sans};
+  --ds-font-serif: #{$portfolio-font-serif};
+  --ds-font-mono: #{$portfolio-font-mono};
+
+  --ds-weight-light: #{$portfolio-weight-light};
+  --ds-weight-regular: #{$portfolio-weight-regular};
+  --ds-weight-medium: #{$portfolio-weight-medium};
+  --ds-weight-semibold: #{$portfolio-weight-semibold};
+  --ds-weight-bold: #{$portfolio-weight-bold};
+
+  --ds-type-xs: #{$portfolio-type-xs};
+  --ds-type-sm: #{$portfolio-type-sm};
+  --ds-type-base: #{$portfolio-type-base};
+  --ds-type-lg: #{$portfolio-type-lg};
+  --ds-type-xl: #{$portfolio-type-xl};
+  --ds-type-2xl: #{$portfolio-type-2xl};
+  --ds-type-3xl: #{$portfolio-type-3xl};
+  --ds-type-4xl: #{$portfolio-type-4xl};
+  --ds-type-5xl: #{$portfolio-type-5xl};
+  --ds-type-6xl: #{$portfolio-type-6xl};
+
+  --ds-leading-tight: #{$portfolio-leading-tight};
+  --ds-leading-snug: #{$portfolio-leading-snug};
+  --ds-leading-normal: #{$portfolio-leading-normal};
+  --ds-leading-relaxed: #{$portfolio-leading-relaxed};
+  --ds-leading-loose: #{$portfolio-leading-loose};
+
+  --ds-tracking-tight: #{$portfolio-tracking-tight};
+  --ds-tracking-normal: #{$portfolio-tracking-normal};
+  --ds-tracking-wide: #{$portfolio-tracking-wide};
+  --ds-tracking-wider: #{$portfolio-tracking-wider};
+  --ds-tracking-widest: #{$portfolio-tracking-widest};
+
+  // ── Elevation ─────────────────────────────────────────────────────────────
+  --ds-shadow-none: #{$portfolio-shadow-none};
+  --ds-shadow-sm: #{$portfolio-shadow-sm};
+  --ds-shadow-md: #{$portfolio-shadow-md};
+  --ds-shadow-lg: #{$portfolio-shadow-lg};
+  --ds-shadow-xl: #{$portfolio-shadow-xl};
+  --ds-shadow-overlay: #{$portfolio-shadow-overlay};
+
+  --ds-radius-none: #{$portfolio-radius-none};
+  --ds-radius-sm: #{$portfolio-radius-sm};
+  --ds-radius-md: #{$portfolio-radius-md};
+  --ds-radius-lg: #{$portfolio-radius-lg};
+  --ds-radius-xl: #{$portfolio-radius-xl};
+  --ds-radius-2xl: #{$portfolio-radius-2xl};
+  --ds-radius-full: #{$portfolio-radius-full};
+
+  // ── Motion ────────────────────────────────────────────────────────────────
+  --ds-duration-fast: #{$portfolio-duration-fast};
+  --ds-duration-moderate: #{$portfolio-duration-moderate};
+  --ds-duration-slow: #{$portfolio-duration-slow};
+  --ds-duration-slower: #{$portfolio-duration-slower};
+
+  --ds-easing-standard: #{$portfolio-easing-standard};
+  --ds-easing-entrance: #{$portfolio-easing-entrance};
+  --ds-easing-exit: #{$portfolio-easing-exit};
+  --ds-easing-expressive: #{$portfolio-easing-expressive};
+
+  // ── Z-Index ───────────────────────────────────────────────────────────────
+  --ds-z-base: #{$portfolio-z-base};
+  --ds-z-dropdown: #{$portfolio-z-dropdown};
+  --ds-z-sticky: #{$portfolio-z-sticky};
+  --ds-z-overlay: #{$portfolio-z-overlay};
+  --ds-z-modal: #{$portfolio-z-modal};
+  --ds-z-toast: #{$portfolio-z-toast};
+
+  // ── Breakpoints ───────────────────────────────────────────────────────────
+  --ds-bp-sm: #{$portfolio-bp-sm};
+  --ds-bp-md: #{$portfolio-bp-md};
+  --ds-bp-lg: #{$portfolio-bp-lg};
+  --ds-bp-xl: #{$portfolio-bp-xl};
+  --ds-bp-2xl: #{$portfolio-bp-2xl};
+}

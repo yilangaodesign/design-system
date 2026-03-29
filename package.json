@@ -1,0 +1,68 @@
+{
+  "name": "@yilangaodesign/design-system",
+  "version": "0.0.0",
+  "description": "Centralized design system for yilangaodesign projects — tokens, mixins, and shared React components.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yilangaodesign/design-system.git"
+  },
+  "files": [
+    "scss",
+    "css",
+    "dist",
+    "docs"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./scss": "./scss/_index.scss",
+    "./scss/*": "./scss/*",
+    "./css/tokens": "./css/tokens.css",
+    "./docs/*": "./docs/*"
+  },
+  "scripts": {
+    "build:components": "tsup",
+    "build:css": "node scripts/build-css.mjs",
+    "build": "npm run build:components && npm run build:css",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint components/",
+    "clean": "rm -rf dist css/tokens.css",
+    "prepublishOnly": "npm run clean && npm run build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "npm run build && changeset publish"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "framer-motion": ">=10"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": false },
+    "react-dom": { "optional": false },
+    "framer-motion": { "optional": true }
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "framer-motion": "^12.38.0",
+    "react": "^19",
+    "react-dom": "^19",
+    "sass": "^1.98.0",
+    "tsup": "^8",
+    "typescript": "^5"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  }
+}
